@@ -71,6 +71,8 @@ img {
 header {
     background-image: linear-gradient(to right, #5c117f, #d00a84);
     /* height: 900px; */
+    position: relative;
+    z-index: 1;
 }
 
 nav {
@@ -207,6 +209,22 @@ nav {
 .header__content {
     width: 50%;
 }
+
+header::before {
+    content: url(images/headerleft.png);
+    position: absolute;
+    top: 283px;
+    z-index: -1;
+}
+
+header::after {
+    content: url(images/headerright.png);
+    position: absolute;
+    top: 383px;
+    right: 0;
+    z-index: -1;
+}
+
 
 /*--------------------------------------------- 3D animation--------------------------------------------- */
 
@@ -391,8 +409,7 @@ nav {
 /* ---------------------------------------------smart security--------------------------------------------- */
 
 .smart__security-bg {
-     background-image: linear-gradient(to right, #5c117f, #d00a84 40% 100%);
-    background: #d00a84;
+    background-image: linear-gradient(to right, #5c117f, #d00a84 40% 100%);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -404,7 +421,7 @@ nav {
     gap: 100px;
 }
 
- 
+
 .main-text .text {
     position: relative;
 }
@@ -469,6 +486,8 @@ nav {
 .glass__effect-bg {
     background-image: linear-gradient(to right, #5c117f, #d00a84);
     padding: 40px 0 40px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .glass__effect {
@@ -521,6 +540,23 @@ nav {
     font-weight: 400;
 }
 
+.glass__effect-bg::before {
+    content: url(images/smartright.png);
+    position: absolute;
+    top: -140px;
+    right: 0;
+    z-index: -1;
+}
+
+.glass__effect-bg::after {
+    content: url(images/smartleft.png);
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: -1;
+}
+
+
 /*---------------------------------------------glass effect end--------------------------------------------- */
 
 /* ---------------------------------------------security mode type --------------------------------------------- */
@@ -546,6 +582,7 @@ nav {
     border: 2px solid #9a64a6;
     border-radius: 10px;
     box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .security__type-bg .container>h3 {
@@ -625,6 +662,8 @@ nav {
 .monitor__home-bg {
     background-image: linear-gradient(to right, #d00a84, #5c117f);
     padding: 100px 0 100px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .monitor__home {
@@ -763,6 +802,22 @@ nav {
     }
 }
 
+.monitor__home-bg::before {
+    content: url(images/homeleft.png);
+    position: absolute;
+    top: -300px;
+    left: 0;
+    z-index: -1;
+}
+
+.monitor__home-bg::after {
+    content: url(images/appright.png);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1;
+}
+
 /*--------------------------------------------- monitor home--------------------------------------------- */
 
 
@@ -770,7 +825,9 @@ nav {
 
 .about__us-bg {
     background-image: linear-gradient(to right, #d00a84, #5c117f);
-    padding: 100px 0 100px 0;
+    padding: 140px 0 100px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .about__us {
@@ -803,12 +860,22 @@ nav {
     padding: 90px 0 60px 0;
 }
 
+.about__us-bg::before {
+    content: url(images/aboutleft.png);
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    z-index: -1;
+}
+
 /*--------------------------------------------- about us end---------------------------------------------*/
 
 /*---------------------------------------------  house can do---------------------------------------------*/
 
 .house__canDo-bg {
     background-image: linear-gradient(to right, #d00a84, #5c117f);
+    position: relative;
+    z-index: 1;
 }
 
 .house__can-glass {
@@ -1193,6 +1260,13 @@ nav {
     left: -20px;
 }
 
+.house__canDo-bg::after {
+    content: url(images/cardrright.png);
+    position: absolute;
+    top: -360px;
+    right: 0;
+    z-index: -1;
+}
 
 /*---------------------------------------------  house can do end---------------------------------------------*/
 
@@ -1318,6 +1392,7 @@ footer {
     .header__content {
         width: 100%;
     }
+
     .header__content p {
         max-width: 100%;
     }
@@ -1377,9 +1452,11 @@ footer {
         row-gap: 50px;
         text-align: center;
     }
-    .about__us-content{
+
+    .about__us-content {
         width: 100%;
     }
+
     .house__canDo-cards {
         flex-wrap: wrap;
         justify-content: center;
@@ -1395,88 +1472,124 @@ footer {
     .lottie-player {
         max-width: 450px;
     }
-    .header__content{
+
+    .header__content {
         font-size: 25px;
         padding-bottom: 2px;
     }
-    .header__content p{
+
+    .header__content p {
         font-size: 17px;
     }
-    .animation__tex{
+
+    .animation__tex {
         font-size: 25px;
     }
-    .smart__security-bg {
-    background: #d00a84;
-   }
 
-    .smart__security-content{
+    .smart__security-bg {
+        background: #d00a84;
+       }
+
+    .smart__security-content {
         font-size: 30px;
     }
+
     .security__type-bg .container>h3 {
         font-size: 30px;
     }
-    .monitor__home-content h2{
+
+    .monitor__home-content h2 {
         font-size: 35px;
     }
-    .monitor__home-content>h3{
+
+    .monitor__home-content>h3 {
         font-size: 30px;
     }
-    .download__image{
+
+    .download__image {
         flex-wrap: wrap;
     }
-    .about__us-content h3{
+
+    .about__us-content h3 {
         font-size: 30px;
     }
-    .house__can-glass .container>h3{
+
+    .house__can-glass .container>h3 {
         font-size: 30px;
     }
-    .footer{
+
+    .footer {
         column-gap: 10px;
     }
+
     .monitor__home-mobile-content .header_img {
         width: 135px;
         height: 135px;
         margin-top: 10px;
     }
 
+    header::before,
+    header::after,
+    .glass__effect-bg::before,
+    .glass__effect-bg::after,
+    .monitor__home-bg::before,
+    .monitor__home-bg::after,
+    .about__us-bg::before,
+    .house__canDo-bg::after {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:320px) {
-    .header__content{
+    .header__content {
         font-size: 18px;
         padding-bottom: 2px;
     }
-    .animation__tex{
+
+    .animation__tex {
         font-size: 18px;
     }
-    .smart__security-content{
+
+    .smart__security-content {
         font-size: 20px;
     }
+
     .security__type-bg .container>h3 {
         font-size: 20px;
     }
+
     .glass__effect-card {
         font-size: 19px;
     }
-    .monitor__home-content h2{
+
+    .monitor__home-content h2 {
         font-size: 20px;
     }
-    .monitor__home-content>h3{
+
+    .monitor__home-content>h3 {
         font-size: 20px;
     }
-    .download__image{
+
+    .download__image {
         flex-wrap: wrap;
     }
-    .about__us-content h3{
+
+    .about__us-content h3 {
         font-size: 20px;
     }
-    .house__can-glass .container>h3{
+
+    .house__can-glass .container>h3 {
         font-size: 20px;
     }
-    .house__canDo-card2, .h_card3-img-content{
+
+    .house__canDo-card2,
+    .h_card3-img-content {
         flex-wrap: wrap;
     }
-    .h__card2-img>img,.h__card3-img>img {
+
+    .h__card2-img>img,
+    .h__card3-img>img {
         width: 100%;
     }
 
