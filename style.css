@@ -183,6 +183,7 @@ nav {
     font-size: 40px;
     padding-bottom: 8rem;
     padding-top: 5rem;
+    width: 50%;
 }
 
 .header__content h1 {
@@ -200,6 +201,11 @@ nav {
     font-size: 0.5em;
     max-width: 400px;
     margin-top: 1rem;
+}
+
+.header__image,
+.header__content {
+    width: 50%;
 }
 
 /*--------------------------------------------- 3D animation--------------------------------------------- */
@@ -563,6 +569,10 @@ nav {
     gap: 40px;
 }
 
+.smart__home-content {
+    width: 50%;
+}
+
 .smart__home-content h2 {
     font-size: 46px;
     font-weight: 400;
@@ -572,6 +582,10 @@ nav {
     font-size: 20px;
     font-weight: 400;
     padding-top: 40px;
+}
+
+.lottie-player {
+    width: 50%;
 }
 
 /* ---------------------------------------------smart home end--------------------------------------------- */
@@ -697,20 +711,24 @@ nav {
     animation: animate__text 3s linear infinite;
 }
 
-@keyframes animate__text{
-    0%{
+@keyframes animate__text {
+    0% {
         transform: rotate(5deg);
     }
-    25%{
+
+    25% {
         transform: rotate(0deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-5deg);
     }
-    75%{
+
+    75% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(5deg);
     }
 }
@@ -720,34 +738,36 @@ nav {
 
 /*--------------------------------------------- about us ---------------------------------------------*/
 
-.about__us-bg{
+.about__us-bg {
     background-image: linear-gradient(to right, #d00a84, #5c117f);
     padding: 100px 0 100px 0;
 }
 
-.about__us{
+.about__us {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
 }
-.about__us-content{
+
+.about__us-content {
     width: 50%;
 }
 
-.about__us-content>span{
+.about__us-content>span {
     display: flex;
     align-items: center;
     gap: 30px;
     padding-top: 7px;
 }
 
-.about__us-content h3{
+.about__us-content h3 {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 5px;
 }
-.about__us-content>p{
+
+.about__us-content>p {
     font-size: 20px;
     font-weight: 400;
     padding: 90px 0 60px 0;
@@ -757,7 +777,7 @@ nav {
 
 /*---------------------------------------------  house can do---------------------------------------------*/
 
-.house__canDo-bg{
+.house__canDo-bg {
     background-image: linear-gradient(to right, #d00a84, #5c117f);
 }
 
@@ -785,7 +805,7 @@ nav {
     z-index: -1;
 }
 
-.house__can-glass .container>h3{
+.house__can-glass .container>h3 {
     font-size: 38px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -793,24 +813,28 @@ nav {
     margin-top: 70px;
 }
 
-.house__canDo-cards{
+.house__canDo-cards {
     display: flex;
     gap: 30px;
     margin-top: 30px;
     margin-bottom: 70px;
 }
 
-.house__canDo-card1, .house__canDo-card2 ,.house__conDo-card3{
+.house__canDo-card1,
+.house__canDo-card2,
+.house__conDo-card3 {
     box-shadow: 5px 10px 18px #5c117f;
 }
 
-.house__canDo-card1:hover{
+.house__canDo-card1:hover {
     box-shadow: 15px 20px 28px #5c117f;
 }
-.house__canDo-card2:hover{
+
+.house__canDo-card2:hover {
     box-shadow: 15px 20px 28px #5c117f;
 }
-.house__conDo-card3:hover{
+
+.house__conDo-card3:hover {
     box-shadow: 15px 20px 28px #5c117f;
 }
 
@@ -818,7 +842,7 @@ nav {
 
 /*--- Card1 ---- */
 
-.house__canDo-card1{
+.house__canDo-card1 {
     max-width: 380px;
     min-height: 380px;
     background-image: linear-gradient(to right, #d00a84, #5c117f);
@@ -828,42 +852,43 @@ nav {
     overflow: hidden;
 }
 
-.h__card1-imgC{
+.h__card1-imgC {
     display: flex;
     justify-content: space-between;
 }
 
-.h__c1-text{
+.h__c1-text {
     width: 90px;
     height: 90px;
     background-color: #fff;
     border-radius: 50%;
-    border: 1px solid #870f81 ;
+    border: 1px solid #870f81;
     text-align: center;
     margin-top: 75px;
     position: absolute;
 }
 
 
-.h__card1-imgC>.h__c1-text>h3{
+.h__card1-imgC>.h__c1-text>h3 {
     color: #35263b;
     font-size: 11px;
     line-height: normal;
     text-align: center;
     padding-top: 15px;
 }
-.h__c1-text>h3>span{
+
+.h__c1-text>h3>span {
     font-family: 'Audiowide', cursive;
     font-size: 30px;
     font-weight: 400;
 }
 
-.h__card1-imgC>div>img{
+.h__card1-imgC>div>img {
     width: 170px;
     height: 170px;
 }
 
-.h__c1-textCard{
+.h__c1-textCard {
     max-width: 320px;
     min-height: 160px;
     position: relative;
@@ -875,7 +900,7 @@ nav {
         0 6px 20px rgba(0, 0, 0, 0.15);
     z-index: 1;
     margin: auto;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 .h__c1-textCard:before {
@@ -892,36 +917,37 @@ nav {
     z-index: -1;
 }
 
-.h__c1-textCard h2{
+.h__c1-textCard h2 {
     font-size: 25px;
     letter-spacing: 6px;
     text-align: center;
     margin-top: 20px;
 }
 
-.h__c1-textCard h4{
+.h__c1-textCard h4 {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 9px;
     text-align: center;
 }
-.h__c1-textCard p{
+
+.h__c1-textCard p {
     font-size: 13px;
     font-weight: 400;
     text-align: center;
     padding: 10px 7px 15px 7px;
 }
 
-.h__card1-imgC::before{
+.h__card1-imgC::before {
     content: "";
-  display: block;
-  background-image: url(images/logo.png);
-  background-size: 50%;
-  width: 100px;
-  background-repeat: no-repeat;
+    display: block;
+    background-image: url(images/logo.png);
+    background-size: 50%;
+    width: 100px;
+    background-repeat: no-repeat;
 }
 
-.house__canDo-card1::before{
+.house__canDo-card1::before {
     content: url(images/headerleft.png);
     z-index: -1;
     position: absolute;
@@ -931,7 +957,7 @@ nav {
 
 /*----- Card 2------ */
 
-.house__canDo-card2{
+.house__canDo-card2 {
     max-width: 380px;
     min-height: 380px;
     background-image: linear-gradient(to right, #d00a84, #5c117f);
@@ -943,11 +969,11 @@ nav {
     align-items: center;
 }
 
-.h__card2-img>img{
+.h__card2-img>img {
     width: 170px;
 }
 
-.h__card2-content{
+.h__card2-content {
     max-width: 180px;
     min-height: 340px;
     position: relative;
@@ -959,7 +985,7 @@ nav {
         0 6px 20px rgba(0, 0, 0, 0.15);
     z-index: 1;
     margin: auto;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 .h__card2-content:before {
@@ -976,20 +1002,21 @@ nav {
     z-index: -1;
 }
 
-.h__card2-content h2{
+.h__card2-content h2 {
     font-size: 23px;
     letter-spacing: 6px;
     text-align: center;
     margin-top: 20px;
 }
 
-.h__card2-content h4{
+.h__card2-content h4 {
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
 }
-.h__card2-content p{
+
+.h__card2-content p {
     font-size: 13px;
     font-weight: 400;
     text-align: center;
@@ -997,19 +1024,19 @@ nav {
 }
 
 
-.h__c2-text{
+.h__c2-text {
     width: 90px;
     height: 90px;
     background-color: #fff;
     border-radius: 50%;
-    border: 1px solid #870f81 ;
+    border: 1px solid #870f81;
     text-align: center;
     margin: auto;
     margin-top: 10px;
 }
 
 
-.h__c2-text>h3{
+.h__c2-text>h3 {
     color: #35263b;
     font-size: 11px;
     line-height: normal;
@@ -1017,13 +1044,13 @@ nav {
     padding-top: 15px;
 }
 
-.h__c2-text>h3>span{
+.h__c2-text>h3>span {
     font-family: 'Audiowide', cursive;
     font-size: 30px;
     font-weight: 400;
 }
 
-.house__canDo-card2::before{
+.house__canDo-card2::before {
     content: url(images/homeleft.png);
     z-index: -1;
     position: absolute;
@@ -1033,50 +1060,51 @@ nav {
 
 /* ----------Card 3---------- */
 
-.house__conDo-card3{
+.house__conDo-card3 {
     max-width: 380px;
     min-height: 380px;
-    background-image: linear-gradient(to right,  #5c117f, #d00a84);
+    background-image: linear-gradient(to right, #5c117f, #d00a84);
     padding: 20px 15px 20px 15px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
 
-.h_card3-img-content{
+.h_card3-img-content {
     display: flex;
 }
 
-.h__card3-img>img{
+.h__card3-img>img {
     width: 170px;
 }
 
-.h__c3-text{
+.h__c3-text {
     width: 90px;
     height: 90px;
     background-color: #fff;
     border-radius: 50%;
-    border: 1px solid #870f81 ;
+    border: 1px solid #870f81;
     text-align: center;
     margin: auto;
     margin-top: 20px;
 }
 
 
-.h__c3-text>h3{
+.h__c3-text>h3 {
     color: #35263b;
     font-size: 11px;
     line-height: normal;
     text-align: center;
     padding-top: 15px;
 }
-.h__c3-text>h3>span{
+
+.h__c3-text>h3>span {
     font-family: 'Audiowide', cursive;
     font-size: 30px;
     font-weight: 400;
 }
 
-.h__card3-content>p{
+.h__card3-content>p {
     font-size: 13px;
     font-weight: 400;
     text-align: center;
@@ -1084,7 +1112,7 @@ nav {
 }
 
 
-.h__card3-content{
+.h__card3-content {
     max-width: 145px;
     min-height: 240px;
     position: relative;
@@ -1096,7 +1124,7 @@ nav {
         0 6px 20px rgba(0, 0, 0, 0.15);
     z-index: 1;
     margin: auto;
-    margin-top:10px ;
+    margin-top: 10px;
 }
 
 .h__card3-content:before {
@@ -1113,21 +1141,21 @@ nav {
     z-index: -1;
 }
 
-.house__conDo-card3>h2{
+.house__conDo-card3>h2 {
     font-size: 30px;
     letter-spacing: 6px;
     text-align: center;
     margin-top: 30px;
 }
 
-.house__conDo-card3>h4{
+.house__conDo-card3>h4 {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 7px;
     text-align: center;
 }
 
-.house__conDo-card3::after{
+.house__conDo-card3::after {
     content: url(images/smartright.png);
     z-index: -1;
     position: absolute;
@@ -1142,17 +1170,17 @@ nav {
 
 /* ---------------------------------------------footer --------------------------------------------- */
 
-footer{
+footer {
     background-color: #a12fb1;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 60px 0 60px 0;
 }
 
-.footer_about{
+.footer_about {
     width: 30%;
 }
 
@@ -1168,7 +1196,7 @@ footer{
 
 @media screen and (max-width:890px) {
 
-    .container{
+    .container {
         padding: 0 10px 0 10px;
     }
 
@@ -1251,46 +1279,171 @@ footer{
         }
     }
 
-    .header__section{
+    .header__section {
         justify-content: center;
         text-align: center;
     }
-    .smart__security{
+
+    .header__image,
+    .header__content {
+        width: 100%;
+    }
+    .header__content p {
+        max-width: 100%;
+    }
+
+    .smart__security {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .smart__security-content {
+        width: 100%;
+    }
+
+    .glass__effect {
         flex-wrap: wrap;
     }
-    .glass__effect{
-        flex-wrap: wrap;
-    }
-    .security__type{
+
+    .security__type {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 30px;
     }
-    .smart__home{
+
+    .smart__home {
         flex-wrap: wrap;
-      text-align: center;
-      margin:0 auto ;
+        text-align: center;
+        margin: 0 auto;
     }
-    .Button{
+
+    .lottie-player {
+        width: 100%;
+    }
+
+    .smart__home-content {
+        width: 100%;
+    }
+
+    .Button {
         margin: auto;
         margin-top: 30px;
     }
-    .monitor__home{
+
+    .monitor__home {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 50px;
+        text-align: center;
     }
-    .about__us{
+
+    .monitor__home-content {
+        width: 100%;
+    }
+
+    .about__us {
         flex-wrap: wrap;
         justify-content: center;
         row-gap: 50px;
+        text-align: center;
     }
-    .house__canDo-cards{
+    .about__us-content{
+        width: 100%;
+    }
+    .house__canDo-cards {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:470px) {
+    .lottie-player {
+        max-width: 450px;
+    }
+    .header__content{
+        font-size: 25px;
+        padding-bottom: 2px;
+    }
+    .header__content p{
+        font-size: 17px;
+    }
+    .animation__tex{
+        font-size: 25px;
+    }
+    .smart__security-content{
+        font-size: 30px;
+    }
+    .security__type-bg .container>h3 {
+        font-size: 30px;
+    }
+    .monitor__home-content h2{
+        font-size: 35px;
+    }
+    .monitor__home-content>h3{
+        font-size: 30px;
+    }
+    .download__image{
+        flex-wrap: wrap;
+    }
+    .about__us-content h3{
+        font-size: 30px;
+    }
+    .house__can-glass .container>h3{
+        font-size: 30px;
     }
     .footer{
+        column-gap: 10px;
+    }
+    .monitor__home-mobile-content .header_img {
+        width: 135px;
+        height: 135px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .header__content{
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+    .animation__tex{
+        font-size: 18px;
+    }
+    .smart__security-content{
+        font-size: 20px;
+    }
+    .security__type-bg .container>h3 {
+        font-size: 20px;
+    }
+    .glass__effect-card {
+        font-size: 19px;
+    }
+    .monitor__home-content h2{
+        font-size: 20px;
+    }
+    .monitor__home-content>h3{
+        font-size: 20px;
+    }
+    .download__image{
         flex-wrap: wrap;
+    }
+    .about__us-content h3{
+        font-size: 20px;
+    }
+    .house__can-glass .container>h3{
+        font-size: 20px;
+    }
+    .house__canDo-card2, .h_card3-img-content{
+        flex-wrap: wrap;
+    }
+    .h__card2-img>img,.h__card3-img>img {
+        width: 100%;
     }
 
 }
