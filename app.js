@@ -21,3 +21,28 @@ const closeNav = () => {
  }
  
  closeNavBtn.addEventListener('click', closeNav)
+
+
+
+
+
+
+//  typewriter
+
+
+ const text = document.querySelector(".typewriter");
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "SECURTY SYSTEM";
+
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "SMART LAMP";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "CCTV CONTROL";
+            }, 8000);
+
+        }
+        textLoad();
+        setInterval(textLoad, 12000);
