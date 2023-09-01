@@ -391,7 +391,8 @@ nav {
 /* ---------------------------------------------smart security--------------------------------------------- */
 
 .smart__security-bg {
-    background:#d00a84;
+     background-image: linear-gradient(to right, #5c117f, #d00a84 40% 100%);
+    background: #d00a84;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -1404,6 +1405,10 @@ footer {
     .animation__tex{
         font-size: 25px;
     }
+    .smart__security-bg {
+    background: #d00a84;
+   }
+
     .smart__security-content{
         font-size: 30px;
     }
