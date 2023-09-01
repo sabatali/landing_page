@@ -391,7 +391,7 @@ nav {
 /* ---------------------------------------------smart security--------------------------------------------- */
 
 .smart__security-bg {
-    background-image: linear-gradient(to right, #5c117f, #d00a84);
+    background-image: linear-gradient(to right, #5c117f, #d00a84 40% 100%);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -401,6 +401,35 @@ nav {
     justify-content: center;
     align-content: center;
     gap: 100px;
+}
+
+ 
+.main-text .text {
+    position: relative;
+}
+
+.text.typewriter:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d00a84;
+    border-left: 10px solid #fff;
+    animation: animate__type 4s steps(23) infinite;
+}
+
+@keyframes animate__type {
+
+    40%,
+    60% {
+        left: calc(100% + 4px);
+    }
+
+    100% {
+        left: 0%;
+    }
 }
 
 .smart__security-image {
