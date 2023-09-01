@@ -391,7 +391,7 @@ nav {
 /* ---------------------------------------------smart security--------------------------------------------- */
 
 .smart__security-bg {
-    background-image: linear-gradient(to right, #5c117f, #d00a84 40% 100%);
+    background:#d00a84;
     padding-top: 100px;
     padding-bottom: 100px;
 }
